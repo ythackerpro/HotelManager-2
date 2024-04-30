@@ -834,6 +834,7 @@
             this.dataGridViewBookRoom.Size = new System.Drawing.Size(447, 422);
             this.dataGridViewBookRoom.StandardTab = true;
             this.dataGridViewBookRoom.TabIndex = 7;
+            this.dataGridViewBookRoom.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.dataGridViewBookRoom_CellStateChanged);
             // 
             // groupBox6
             // 
