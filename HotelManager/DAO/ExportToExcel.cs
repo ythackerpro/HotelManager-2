@@ -97,9 +97,9 @@ namespace HotelManager.DAO
 
                 sheetExcel.Columns.AutoFit();
                 sheetExcel.Columns.HorizontalAlignment = Excel.XlHAlign.xlHAlignLeft;
-                sheetExcel.Rows[1].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
-                sheetExcel.Rows[1].Font.Bold = true;
-                sheetExcel.Rows[1].Font.Size = 12;
+                sheetExcel.Rows.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                sheetExcel.Rows.Font.Bold = true;
+                sheetExcel.Rows.Font.Size = 12;
                 saveFile(bookExcel, path, fileFormat);
                 appExcel.Quit();
                 Marshal.ReleaseComObject(appExcel);
