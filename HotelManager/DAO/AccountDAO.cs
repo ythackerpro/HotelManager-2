@@ -51,7 +51,9 @@ namespace HotelManager.DAO
         internal bool UpdatePassword(string username, string password)
         {
             string query = "USP_UpdatePassword @username , @password";
-            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { username, HashPass(password) }) > 0;
+            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { username, password }) > 0;
+            //string query = "USP_UpdatePassword @username , @password";
+            //return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { username, HashPass(password) }) > 0;
         }
         internal bool UpdateInfo(string username,string address, int phonenumber,string idCard, DateTime dateOfBirth,string sex)
         {
