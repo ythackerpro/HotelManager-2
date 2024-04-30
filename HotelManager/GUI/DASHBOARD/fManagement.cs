@@ -74,9 +74,16 @@ namespace HotelManager
 
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
+        //private void btnLogOut_Click(object sender, EventArgs e)
+        //{
             
+        //    this.Hide();
+        //    fLogin login = new fLogin();
+        //    login.ShowDialog();
+        //}
+
+        private void btnLogOut_Click_1(object sender, EventArgs e)
+        {
             this.Hide();
             fLogin login = new fLogin();
             login.ShowDialog();
@@ -229,5 +236,7 @@ namespace HotelManager
         {
 
         }
+
+        
     }
 }

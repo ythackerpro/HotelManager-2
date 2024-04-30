@@ -108,70 +108,70 @@
     <Compile Include="DTO\ServiceType.cs" />
     <Compile Include="DTO\StatusRoom.cs" />
     <Compile Include="DAO\ExportToExcel.cs" />
-    <Compile Include="fAbout.cs">
+    <Compile Include="GUI\DASHBOARD\fAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAbout.Designer.cs">
+    <Compile Include="GUI\DASHBOARD\fAbout.Designer.cs">
       <DependentUpon>fAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAccess.cs">
+    <Compile Include="GUI\EMPLOYEES\fAccess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAccess.Designer.cs">
+    <Compile Include="GUI\EMPLOYEES\fAccess.Designer.cs">
       <DependentUpon>fAccess.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddCustomer.cs">
+    <Compile Include="GUI\CUSTOMERS\fAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddCustomer.Designer.cs">
+    <Compile Include="GUI\CUSTOMERS\fAddCustomer.Designer.cs">
       <DependentUpon>fAddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddCustomerInfo.cs">
+    <Compile Include="GUI\CUSTOMERS\fAddCustomerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddCustomerInfo.Designer.cs">
+    <Compile Include="GUI\CUSTOMERS\fAddCustomerInfo.Designer.cs">
       <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddRoom.cs">
+    <Compile Include="GUI\ROOMS\fAddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddRoom.Designer.cs">
+    <Compile Include="GUI\ROOMS\fAddRoom.Designer.cs">
       <DependentUpon>fAddRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddService.cs">
+    <Compile Include="GUI\SERVICES\fAddService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddService.Designer.cs">
+    <Compile Include="GUI\SERVICES\fAddService.Designer.cs">
       <DependentUpon>fAddService.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddServiceType.cs">
+    <Compile Include="GUI\SERVICES\fAddServiceType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddServiceType.Designer.cs">
+    <Compile Include="GUI\SERVICES\fAddServiceType.Designer.cs">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </Compile>
-    <Compile Include="fParameter.cs">
+    <Compile Include="GUI\DASHBOARD\fParameter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fParameter.Designer.cs">
+    <Compile Include="GUI\DASHBOARD\fParameter.Designer.cs">
       <DependentUpon>fParameter.cs</DependentUpon>
     </Compile>
-    <Compile Include="fReport.cs">
+    <Compile Include="GUI\REPORTS\fReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fReport.Designer.cs">
+    <Compile Include="GUI\REPORTS\fReport.Designer.cs">
       <DependentUpon>fReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="fRoom.cs">
+    <Compile Include="GUI\ROOMS\fRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fRoom.Designer.cs">
+    <Compile Include="GUI\ROOMS\fRoom.Designer.cs">
       <DependentUpon>fRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fRoomType.cs">
+    <Compile Include="GUI\ROOMS\fRoomType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fRoomType.Designer.cs">
+    <Compile Include="GUI\ROOMS\fRoomType.Designer.cs">
       <DependentUpon>fRoomType.cs</DependentUpon>
     </Compile>
     <Compile Include="Resources\fAddStaff.cs">
@@ -180,186 +180,186 @@
     <Compile Include="Resources\fAddStaff.Designer.cs">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddStaffType.cs">
+    <Compile Include="GUI\EMPLOYEES\fAddStaffType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAddStaffType.Designer.cs">
+    <Compile Include="GUI\EMPLOYEES\fAddStaffType.Designer.cs">
       <DependentUpon>fAddStaffType.cs</DependentUpon>
     </Compile>
-    <Compile Include="fBill.cs">
+    <Compile Include="GUI\REVENUE\fBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBill.Designer.cs">
+    <Compile Include="GUI\REVENUE\fBill.Designer.cs">
       <DependentUpon>fBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="fBookRoom.cs">
+    <Compile Include="GUI\ROOMS\fBookRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBookRoom.Designer.cs">
+    <Compile Include="GUI\ROOMS\fBookRoom.Designer.cs">
       <DependentUpon>fBookRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fBookRoomDetails.cs">
+    <Compile Include="GUI\ROOMS\fBookRoomDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBookRoomDetails.Designer.cs">
+    <Compile Include="GUI\ROOMS\fBookRoomDetails.Designer.cs">
       <DependentUpon>fBookRoomDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="fChangeRoom.cs">
+    <Compile Include="GUI\ROOMS\fChangeRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fChangeRoom.Designer.cs">
+    <Compile Include="GUI\ROOMS\fChangeRoom.Designer.cs">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fCustomer.cs">
+    <Compile Include="GUI\CUSTOMERS\fCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fCustomer.Designer.cs">
+    <Compile Include="GUI\CUSTOMERS\fCustomer.Designer.cs">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="fManagement.cs">
+    <Compile Include="GUI\DASHBOARD\fManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fManagement.Designer.cs">
+    <Compile Include="GUI\DASHBOARD\fManagement.Designer.cs">
       <DependentUpon>fManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="fLogin.cs">
+    <Compile Include="GUI\DASHBOARD\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fLogin.Designer.cs">
+    <Compile Include="GUI\DASHBOARD\fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPrintBill.cs">
+    <Compile Include="GUI\REVENUE\fPrintBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPrintBill.Designer.cs">
+    <Compile Include="GUI\REVENUE\fPrintBill.Designer.cs">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="fProfile.cs">
+    <Compile Include="GUI\EMPLOYEES\fProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fProfile.Designer.cs">
+    <Compile Include="GUI\EMPLOYEES\fProfile.Designer.cs">
       <DependentUpon>fProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="fReceiveRoom.cs">
+    <Compile Include="GUI\ROOMS\fReceiveRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fReceiveRoom.Designer.cs">
+    <Compile Include="GUI\ROOMS\fReceiveRoom.Designer.cs">
       <DependentUpon>fReceiveRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fReceiveRoomDetails.cs">
+    <Compile Include="GUI\ROOMS\fReceiveRoomDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fReceiveRoomDetails.Designer.cs">
+    <Compile Include="GUI\ROOMS\fReceiveRoomDetails.Designer.cs">
       <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="fService.cs">
+    <Compile Include="GUI\SERVICES\fService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fService.Designer.cs">
+    <Compile Include="GUI\SERVICES\fService.Designer.cs">
       <DependentUpon>fService.cs</DependentUpon>
     </Compile>
-    <Compile Include="fServiceType.cs">
+    <Compile Include="GUI\SERVICES\fServiceType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fServiceType.Designer.cs">
+    <Compile Include="GUI\SERVICES\fServiceType.Designer.cs">
       <DependentUpon>fServiceType.cs</DependentUpon>
     </Compile>
-    <Compile Include="fStaff.cs">
+    <Compile Include="GUI\EMPLOYEES\fStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fStaff.Designer.cs">
+    <Compile Include="GUI\EMPLOYEES\fStaff.Designer.cs">
       <DependentUpon>fStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="fUseService.cs">
+    <Compile Include="GUI\SERVICES\fUseService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fUseService.Designer.cs">
+    <Compile Include="GUI\SERVICES\fUseService.Designer.cs">
       <DependentUpon>fUseService.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fAbout.resx">
+    <EmbeddedResource Include="GUI\DASHBOARD\fAbout.resx">
       <DependentUpon>fAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAccess.resx">
+    <EmbeddedResource Include="GUI\EMPLOYEES\fAccess.resx">
       <DependentUpon>fAccess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddCustomer.resx">
+    <EmbeddedResource Include="GUI\CUSTOMERS\fAddCustomer.resx">
       <DependentUpon>fAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddCustomerInfo.resx">
+    <EmbeddedResource Include="GUI\CUSTOMERS\fAddCustomerInfo.resx">
       <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddRoom.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fAddRoom.resx">
       <DependentUpon>fAddRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddService.resx">
+    <EmbeddedResource Include="GUI\SERVICES\fAddService.resx">
       <DependentUpon>fAddService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddServiceType.resx">
+    <EmbeddedResource Include="GUI\SERVICES\fAddServiceType.resx">
       <DependentUpon>fAddServiceType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fParameter.resx">
+    <EmbeddedResource Include="GUI\DASHBOARD\fParameter.resx">
       <DependentUpon>fParameter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fReport.resx">
+    <EmbeddedResource Include="GUI\REPORTS\fReport.resx">
       <DependentUpon>fReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fRoom.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fRoom.resx">
       <DependentUpon>fRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fRoomType.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fRoomType.resx">
       <DependentUpon>fRoomType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\fAddStaff.resx">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddStaffType.resx">
+    <EmbeddedResource Include="GUI\EMPLOYEES\fAddStaffType.resx">
       <DependentUpon>fAddStaffType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fBill.resx">
+    <EmbeddedResource Include="GUI\REVENUE\fBill.resx">
       <DependentUpon>fBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fBookRoom.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fBookRoom.resx">
       <DependentUpon>fBookRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fBookRoomDetails.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fBookRoomDetails.resx">
       <DependentUpon>fBookRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fChangeRoom.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fChangeRoom.resx">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fCustomer.resx">
+    <EmbeddedResource Include="GUI\CUSTOMERS\fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fManagement.resx">
+    <EmbeddedResource Include="GUI\DASHBOARD\fManagement.resx">
       <DependentUpon>fManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
+    <EmbeddedResource Include="GUI\DASHBOARD\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPrintBill.resx">
+    <EmbeddedResource Include="GUI\REVENUE\fPrintBill.resx">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fProfile.resx">
+    <EmbeddedResource Include="GUI\EMPLOYEES\fProfile.resx">
       <DependentUpon>fProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fReceiveRoom.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fReceiveRoom.resx">
       <DependentUpon>fReceiveRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fReceiveRoomDetails.resx">
+    <EmbeddedResource Include="GUI\ROOMS\fReceiveRoomDetails.resx">
       <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fService.resx">
+    <EmbeddedResource Include="GUI\SERVICES\fService.resx">
       <DependentUpon>fService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fServiceType.resx">
+    <EmbeddedResource Include="GUI\SERVICES\fServiceType.resx">
       <DependentUpon>fServiceType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fStaff.resx">
+    <EmbeddedResource Include="GUI\EMPLOYEES\fStaff.resx">
       <DependentUpon>fStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fUseService.resx">
+    <EmbeddedResource Include="GUI\SERVICES\fUseService.resx">
       <DependentUpon>fUseService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -421,5 +421,6 @@
   <ItemGroup>
     <Content Include="hotel.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
