@@ -183,10 +183,17 @@ namespace HotelManager
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-            fReceiveRoomDetails f = new fReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
-            f.ShowDialog();
-            Show();
-            LoadReceiveRoomInfo();
+            if (dataGridViewReceiveRoom.Rows.Count != 0)
+            {
+                fReceiveRoomDetails f = new fReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
+                f.ShowDialog();
+                Show();
+                LoadReceiveRoomInfo();
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn phòng để xem chi tiết", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

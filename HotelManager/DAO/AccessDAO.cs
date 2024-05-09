@@ -20,6 +20,8 @@ namespace HotelManager.DAO
             string query = "USP_LoadFullAccessNow @idStaffType";
             return DataProvider.Instance.ExecuteQuery(query, new object[] { idStaffType });
         }
+
+        //đang fix USP_LoadFullAccessRest
         public DataTable GetFullAccessRest(int idStaffType)
         {
             string query = "USP_LoadFullAccessRest @idStaffType";

@@ -396,15 +396,18 @@ namespace HotelManager
         }
         #endregion
 
+        //btn quyền truy cập
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            fAccess f = new fAccess();
-            f.ShowDialog();
-            LoadFullStaffType();
-            if (btnCancel.Visible == false)
-                LoadFullStaff(GetFullStaff());
-            else
-                BtnCancel_Click(null, null);
+            MessageBox.Show("Đang bảo trì", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            //fAccess f = new fAccess();
+            //f.ShowDialog();
+            //LoadFullStaffType();
+            //if (btnCancel.Visible == false)
+            //    LoadFullStaff(GetFullStaff());
+            //else
+            //    BtnCancel_Click(null, null);
         }
     }
 }
