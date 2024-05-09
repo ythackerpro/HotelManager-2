@@ -63,29 +63,55 @@ namespace HotelManager
                 MessageBox.Show( "Tên hiển thị không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        //private void bunifuThinButton22_Click(object sender, EventArgs e)
+        //{
+            
+        //}
+        private void btnSaveNewPass_Click(object sender, EventArgs e)
         {
-            if (AccountDAO.Instance.HashPass(txbPass.Text) ==Password&&txbNewPass.Text!=String.Empty&&txbReNewPass.Text!=String.Empty)
+            //new: 30/4/2024
+            if(txtPass.Text == Password && txbNewPass.Text != String.Empty && txbReNewPass.Text != String.Empty)
             {
-                if(txbNewPass.Text==txbReNewPass.Text)
+                if (txbNewPass.Text == txbReNewPass.Text)
                 {
                     UpdatePassword(txbUserName.Text, txbNewPass.Text);
-                    MessageBox.Show( "Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txbPass.Text = txbNewPass.Text = txbReNewPass.Text = String.Empty;
+                    MessageBox.Show("Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPass.Text = txbNewPass.Text = txbReNewPass.Text = String.Empty;
                     LoadProfile(txbUserName.Text);
                 }
                 else
                 {
-                    MessageBox.Show( "Mật khẩu mới không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Mật khẩu mới không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txbNewPass.Text = txbReNewPass.Text = String.Empty;
                 }
             }
-            else
-            {
-                MessageBox.Show( "Mật khẩu không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txbPass.Text=txbNewPass.Text = txbReNewPass.Text = String.Empty;
-            }   
+
         }
+        /*
+         old
+        //if (AccountDAO.Instance.HashPass(txbPass.Text) == Password && txbNewPass.Text != String.Empty && txbReNewPass.Text != String.Empty)
+        //{
+        //    if (txbNewPass.Text == txbReNewPass.Text)
+        //    {
+        //        UpdatePassword(txbUserName.Text, txbNewPass.Text);
+        //        MessageBox.Show("Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        txbPass.Text = txbNewPass.Text = txbReNewPass.Text = String.Empty;
+        //        LoadProfile(txbUserName.Text);
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Mật khẩu mới không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        txbNewPass.Text = txbReNewPass.Text = String.Empty;
+        //    }
+        //}
+        //else
+        //{
+        //    MessageBox.Show("Mật khẩu không hợp lệ.\nVui lòng nhập lại.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //    txbPass.Text = txbNewPass.Text = txbReNewPass.Text = String.Empty;
+        //}
+
+        */
+
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
@@ -114,5 +140,7 @@ namespace HotelManager
         {
             Close();
         }
+
+        
     }
 }

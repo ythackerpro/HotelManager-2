@@ -356,5 +356,15 @@ namespace HotelManager
             LoadFullCustomer(GetFullCustomer());
         }
         #endregion
+
+        private void txbSearch_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

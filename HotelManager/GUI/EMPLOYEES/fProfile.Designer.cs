@@ -32,16 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fProfile));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txbReNewPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.txbNewPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txbPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label17 = new System.Windows.Forms.Label();
             this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
             this.lblDisplayName = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbSex = new MetroFramework.Controls.MetroComboBox();
+            this.dpkDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label10 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -69,8 +70,7 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dpkDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.cbSex = new MetroFramework.Controls.MetroComboBox();
+            this.btnSaveNewPass = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -87,12 +87,12 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.bunifuThinButton22);
+            this.groupBox3.Controls.Add(this.btnSaveNewPass);
             this.groupBox3.Controls.Add(this.txbReNewPass);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txbNewPass);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.txbPass);
+            this.groupBox3.Controls.Add(this.txtPass);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.bunifuCheckbox2);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -104,32 +104,6 @@
             this.groupBox3.TabIndex = 58;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Bảo mật";
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Lưu Thay Đổi";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(27, 218);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(203, 40);
-            this.bunifuThinButton22.TabIndex = 68;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // txbReNewPass
             // 
@@ -187,22 +161,22 @@
             this.label15.TabIndex = 65;
             this.label15.Text = "Mật khẩu mới:";
             // 
-            // txbPass
+            // txtPass
             // 
-            this.txbPass.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbPass.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbPass.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-            this.txbPass.BorderThickness = 1;
-            this.txbPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txbPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbPass.isPassword = true;
-            this.txbPass.Location = new System.Drawing.Point(25, 53);
-            this.txbPass.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPass.Name = "txbPass";
-            this.txbPass.Size = new System.Drawing.Size(203, 29);
-            this.txbPass.TabIndex = 62;
-            this.txbPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPass.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txtPass.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.txtPass.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txtPass.BorderThickness = 1;
+            this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPass.isPassword = true;
+            this.txtPass.Location = new System.Drawing.Point(25, 53);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(203, 29);
+            this.txtPass.TabIndex = 62;
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label17
             // 
@@ -236,7 +210,7 @@
             this.lblDisplayName.Name = "lblDisplayName";
             this.lblDisplayName.Size = new System.Drawing.Size(195, 20);
             this.lblDisplayName.TabIndex = 57;
-            this.lblDisplayName.Text = "Nguyen Duy Cuong";
+            this.lblDisplayName.Text = "Displayname";
             this.lblDisplayName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox2
@@ -264,6 +238,41 @@
             this.groupBox2.TabIndex = 54;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin cơ bản";
+            // 
+            // cbSex
+            // 
+            this.cbSex.BackColor = System.Drawing.Color.White;
+            this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSex.FormattingEnabled = true;
+            this.cbSex.ItemHeight = 23;
+            this.cbSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.cbSex.Location = new System.Drawing.Point(494, 54);
+            this.cbSex.Name = "cbSex";
+            this.cbSex.Size = new System.Drawing.Size(203, 29);
+            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbSex.TabIndex = 75;
+            this.cbSex.UseCustomBackColor = true;
+            this.cbSex.UseCustomForeColor = true;
+            this.cbSex.UseSelectable = true;
+            this.cbSex.UseStyleColors = true;
+            // 
+            // dpkDateOfBirth
+            // 
+            this.dpkDateOfBirth.BackColor = System.Drawing.Color.SeaGreen;
+            this.dpkDateOfBirth.BorderRadius = 0;
+            this.dpkDateOfBirth.ForeColor = System.Drawing.Color.White;
+            this.dpkDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpkDateOfBirth.FormatCustom = null;
+            this.dpkDateOfBirth.Location = new System.Drawing.Point(267, 111);
+            this.dpkDateOfBirth.Margin = new System.Windows.Forms.Padding(21, 34, 21, 34);
+            this.dpkDateOfBirth.Name = "dpkDateOfBirth";
+            this.dpkDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dpkDateOfBirth.Size = new System.Drawing.Size(202, 29);
+            this.dpkDateOfBirth.TabIndex = 74;
+            this.dpkDateOfBirth.Value = new System.DateTime(2018, 2, 23, 23, 29, 57, 962);
             // 
             // txbIDCard
             // 
@@ -592,7 +601,7 @@
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(128, 20);
             this.lblUserName.TabIndex = 56;
-            this.lblUserName.Text = "ndc07";
+            this.lblUserName.Text = "Username";
             this.lblUserName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnClose
@@ -669,40 +678,31 @@
             this.btnClose_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose_.Click += new System.EventHandler(this.btnClose__Click);
             // 
-            // dpkDateOfBirth
+            // btnSaveNewPass
             // 
-            this.dpkDateOfBirth.BackColor = System.Drawing.Color.SeaGreen;
-            this.dpkDateOfBirth.BorderRadius = 0;
-            this.dpkDateOfBirth.ForeColor = System.Drawing.Color.White;
-            this.dpkDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpkDateOfBirth.FormatCustom = null;
-            this.dpkDateOfBirth.Location = new System.Drawing.Point(267, 111);
-            this.dpkDateOfBirth.Margin = new System.Windows.Forms.Padding(21, 34, 21, 34);
-            this.dpkDateOfBirth.Name = "dpkDateOfBirth";
-            this.dpkDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dpkDateOfBirth.Size = new System.Drawing.Size(202, 29);
-            this.dpkDateOfBirth.TabIndex = 74;
-            this.dpkDateOfBirth.Value = new System.DateTime(2018, 2, 23, 23, 29, 57, 962);
-            // 
-            // cbSex
-            // 
-            this.cbSex.BackColor = System.Drawing.Color.White;
-            this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSex.FormattingEnabled = true;
-            this.cbSex.ItemHeight = 23;
-            this.cbSex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.cbSex.Location = new System.Drawing.Point(494, 54);
-            this.cbSex.Name = "cbSex";
-            this.cbSex.Size = new System.Drawing.Size(203, 29);
-            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
-            this.cbSex.TabIndex = 75;
-            this.cbSex.UseCustomBackColor = true;
-            this.cbSex.UseCustomForeColor = true;
-            this.cbSex.UseSelectable = true;
-            this.cbSex.UseStyleColors = true;
+            this.btnSaveNewPass.ActiveBorderThickness = 1;
+            this.btnSaveNewPass.ActiveCornerRadius = 20;
+            this.btnSaveNewPass.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSaveNewPass.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSaveNewPass.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSaveNewPass.BackColor = System.Drawing.Color.White;
+            this.btnSaveNewPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSaveNewPass.BackgroundImage")));
+            this.btnSaveNewPass.ButtonText = "Lưu Thay Đổi";
+            this.btnSaveNewPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveNewPass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveNewPass.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSaveNewPass.IdleBorderThickness = 1;
+            this.btnSaveNewPass.IdleCornerRadius = 20;
+            this.btnSaveNewPass.IdleFillColor = System.Drawing.Color.White;
+            this.btnSaveNewPass.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnSaveNewPass.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSaveNewPass.Location = new System.Drawing.Point(27, 218);
+            this.btnSaveNewPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSaveNewPass.Name = "btnSaveNewPass";
+            this.btnSaveNewPass.Size = new System.Drawing.Size(203, 40);
+            this.btnSaveNewPass.TabIndex = 68;
+            this.btnSaveNewPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSaveNewPass.Click += new System.EventHandler(this.btnSaveNewPass_Click);
             // 
             // fProfile
             // 
@@ -742,12 +742,11 @@
 
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbReNewPass;
         private System.Windows.Forms.Label label14;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbNewPass;
         private System.Windows.Forms.Label label15;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txbPass;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtPass;
         private System.Windows.Forms.Label label17;
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
         private System.Windows.Forms.Label lblDisplayName;
@@ -781,5 +780,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnClose_;
         private Bunifu.Framework.UI.BunifuDatepicker dpkDateOfBirth;
         private MetroFramework.Controls.MetroComboBox cbSex;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSaveNewPass;
     }
 }

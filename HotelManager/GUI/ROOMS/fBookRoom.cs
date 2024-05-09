@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -179,6 +180,15 @@ namespace HotelManager
             }   
         }
 
+        private void dataGridViewBookRoom_CellStateChanged(object sender, DataGridViewCellStateChangedEventArgs e)
+        {
+            if (dataGridViewBookRoom.Rows.Count == 0)
+            {
+                btnDetails.Enabled = false;
+            }
+        }
+
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
             ClearData();
@@ -191,12 +201,27 @@ namespace HotelManager
 
         private void btnDetails_Click(object sender, EventArgs e)
         {
-            int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
-            string idCard= dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
-            fBookRoomDetails f = new fBookRoomDetails(idBookRoom, idCard);
-            f.ShowDialog();
-            Show();
-            LoadListBookRoom();
+            //int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
+            //string idCard= dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
+            if (dataGridViewBookRoom.Rows.Count != 0)
+            {
+                //btnDetails.Enabled = false;
+                int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
+                string idCard = dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
+                fBookRoomDetails f = new fBookRoomDetails(idBookRoom, idCard);
+                f.ShowDialog();
+                Show();
+                LoadListBookRoom();
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn phòng để xem chi tiết", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+            //fBookRoomDetails f = new fBookRoomDetails(idBookRoom, idCard);
+            //f.ShowDialog();
+            //Show();
+            //LoadListBookRoom();
         }
 
         private void txbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
@@ -204,5 +229,7 @@ namespace HotelManager
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        
     }
 }
