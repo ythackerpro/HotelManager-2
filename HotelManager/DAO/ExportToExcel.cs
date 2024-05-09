@@ -1,9 +1,9 @@
 ﻿using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using Excel = Microsoft.Office.Interop.Excel;
+
 using System.Reflection;
 using System;
-using Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace HotelManager.DAO
 {
@@ -73,15 +73,15 @@ namespace HotelManager.DAO
                         }
                     }
                 }
-                Range line = (Range)sheetExcel.Rows[1];
-                currentColumn = 0;
-                line.Insert();
-                for (int i = 0; i < dataGridView.ColumnCount; i++)
-                {
-                    if (dataGridView.Columns[i].Visible == false) continue;
-                    else
-                        sheetExcel.Cells[1, ++currentColumn] = dataGridView.Columns[i].HeaderText;
-                }
+                //Range line = (Range)sheetExcel.Rows[1];
+                //currentColumn = 0;
+                //line.Insert();
+                //for (int i = 0; i < dataGridView.ColumnCount; i++)
+                //{
+                //    if (dataGridView.Columns[i].Visible == false) continue;
+                //    else
+                //        sheetExcel.Cells[1, ++currentColumn] = dataGridView.Columns[i].HeaderText;
+                //}
 
 
                 //Excel.ChartObjects chartObjects = (Excel.ChartObjects)sheetExcel.ChartObjects();
@@ -97,9 +97,9 @@ namespace HotelManager.DAO
 
                 sheetExcel.Columns.AutoFit();
                 sheetExcel.Columns.HorizontalAlignment = Excel.XlHAlign.xlHAlignLeft;
-                sheetExcel.Rows[1].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
-                sheetExcel.Rows[1].Font.Bold = true;
-                sheetExcel.Rows[1].Font.Size = 12;
+                sheetExcel.Rows.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                sheetExcel.Rows.Font.Bold = true;
+                sheetExcel.Rows.Font.Size = 12;
                 saveFile(bookExcel, path, fileFormat);
                 appExcel.Quit();
                 Marshal.ReleaseComObject(appExcel);

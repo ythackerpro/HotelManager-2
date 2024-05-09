@@ -60,6 +60,9 @@ namespace HotelManager
             txbIDCard.Text = dataRow["IDCard"].ToString();
             txbRoomTypeName.Text = dataRow["RoomTypeName"].ToString();
             cbRoomType.Text= dataRow["RoomTypeName"].ToString();//*
+
+            txbRoomName.Text = dataRow["Name"].ToString() ;
+
             txbDateCheckIn.Text = dataRow["DateCheckIn"].ToString().Split(' ')[0];
             dateCheckIn = (DateTime)dataRow["DateCheckIn"];
             txbDateCheckOut.Text = dataRow["DateCheckOut"].ToString().Split(' ')[0];

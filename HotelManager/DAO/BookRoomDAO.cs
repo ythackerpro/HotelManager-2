@@ -12,7 +12,7 @@ namespace HotelManager.DAO
     {
         private static BookRoomDAO instance;
         private BookRoomDAO() { }
-        public bool InsertBookRoom(int idCustomer, int idRoomType,DateTime datecheckin,DateTime datecheckout, DateTime datebookroom)
+        public bool InsertBookRoom(int idCustomer, int idRoomType,  DateTime datecheckin,DateTime datecheckout, DateTime datebookroom)
         {
             string query = "USP_InsertBookRoom @idCustomer , @idRoomType , @datecheckin , @datecheckout , @datebookroom";
             return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { idCustomer, idRoomType, datecheckin, datecheckout, datebookroom }) > 0;
