@@ -12,10 +12,10 @@ namespace HotelManager.DAO
     {
         private static ReceiveRoomDAO instance;
         private ReceiveRoomDAO() { }
-        public bool InsertReceiveRoom(int idBookRoom, int idRoom)
+        public bool InsertReceiveRoom(int idBookRoom, int idRoom, string idRoomName)
         {
-            string query = "InsertReceiveRoom @idBookRoom , @idRoom";
-            int count = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { idBookRoom, idRoom });
+            string query = "InsertReceiveRoom @idBookRoom , @idRoom, @idRoomName";
+            int count = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { idBookRoom, idRoom, idRoomName });
             return count > 0;
         }
         public int GetIDCurrent()

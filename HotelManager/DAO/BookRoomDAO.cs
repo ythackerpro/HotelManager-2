@@ -32,7 +32,7 @@ namespace HotelManager.DAO
         public bool IsIDBookRoomExists(int idBookRoom)
         {
             string query = "USP_IsIDBookRoomExists @idBookRoom , @dateNow";
-            DataTable dataTable = DataProvider.Instance.ExecuteQuery(query, new object[] { idBookRoom,DateTime.Now.Date});
+            DataTable dataTable = DataProvider.Instance.ExecuteQuery(query, new object[] { idBookRoom, DateTime.Now.Date});
             return dataTable.Rows.Count > 0;
         }
         public DataRow ShowBookRoomInfo(int idBookRoom)

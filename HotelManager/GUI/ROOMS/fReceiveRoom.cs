@@ -55,13 +55,16 @@ namespace HotelManager
         }
         public void ShowBookRoomInfo(int idBookRoom)
         {
+            Room room = new Room();
+            
+
             DataRow dataRow = BookRoomDAO.Instance.ShowBookRoomInfo(idBookRoom);
             txbFullName.Text = dataRow["FullName"].ToString();
             txbIDCard.Text = dataRow["IDCard"].ToString();
             txbRoomTypeName.Text = dataRow["RoomTypeName"].ToString();
             cbRoomType.Text= dataRow["RoomTypeName"].ToString();//*
 
-            txbRoomName.Text = dataRow["Name"].ToString() ;
+            txbRoomName.Text = dataRow["Name"].ToString();
 
             txbDateCheckIn.Text = dataRow["DateCheckIn"].ToString().Split(' ')[0];
             dateCheckIn = (DateTime)dataRow["DateCheckIn"];
@@ -69,9 +72,9 @@ namespace HotelManager
             txbAmountPeople.Text= dataRow["LimitPerson"].ToString();
             txbPrice.Text= dataRow["Price"].ToString();
         }
-        public bool InsertReceiveRoom(int idBookRoom, int idRoom)
+        public bool InsertReceiveRoom(int idBookRoom, int idRoom, string idRoomName)
         {
-            return ReceiveRoomDAO.Instance.InsertReceiveRoom(idBookRoom, idRoom);
+            return ReceiveRoomDAO.Instance.InsertReceiveRoom(idBookRoom, idRoom, idRoomName);
         }
         public bool InsertReceiveRoomDetails(int idReceiveRoom, int idCustomerOther)
         {
@@ -141,10 +144,14 @@ namespace HotelManager
                     if (dateCheckIn == DateTime.Now.Date)
                     {
                         int idBookRoom;
+
+                        Room room = new Room();
+                        string idRoomName = room.Name;
+                        
                         if (IDBookRoom != -1) idBookRoom = IDBookRoom;
                         else idBookRoom = int.Parse(btnSearch.Tag.ToString());
                         int idRoom = (cbRoom.SelectedItem as Room).Id;
-                        if (InsertReceiveRoom(idBookRoom, idRoom))
+                        if (InsertReceiveRoom(idBookRoom, idRoom, idRoomName))
                         {
                             //if (fAddCustomerInfo.ListIdCustomer != null)
                             //{
