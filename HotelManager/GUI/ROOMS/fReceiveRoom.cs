@@ -64,7 +64,7 @@ namespace HotelManager
             txbRoomTypeName.Text = dataRow["RoomTypeName"].ToString();
             cbRoomType.Text= dataRow["RoomTypeName"].ToString();//*
 
-            txbRoomName.Text = dataRow["Name"].ToString();
+            //txbRoomName.Text = dataRow["Name"].ToString();
 
             txbDateCheckIn.Text = dataRow["DateCheckIn"].ToString().Split(' ')[0];
             dateCheckIn = (DateTime)dataRow["DateCheckIn"];
@@ -72,9 +72,9 @@ namespace HotelManager
             txbAmountPeople.Text= dataRow["LimitPerson"].ToString();
             txbPrice.Text= dataRow["Price"].ToString();
         }
-        public bool InsertReceiveRoom(int idBookRoom, int idRoom, string idRoomName)
+        public bool InsertReceiveRoom(int idBookRoom, int idRoom)
         {
-            return ReceiveRoomDAO.Instance.InsertReceiveRoom(idBookRoom, idRoom, idRoomName);
+            return ReceiveRoomDAO.Instance.InsertReceiveRoom(idBookRoom, idRoom);
         }
         public bool InsertReceiveRoomDetails(int idReceiveRoom, int idCustomerOther)
         {
@@ -151,7 +151,7 @@ namespace HotelManager
                         if (IDBookRoom != -1) idBookRoom = IDBookRoom;
                         else idBookRoom = int.Parse(btnSearch.Tag.ToString());
                         int idRoom = (cbRoom.SelectedItem as Room).Id;
-                        if (InsertReceiveRoom(idBookRoom, idRoom, idRoomName))
+                        if (InsertReceiveRoom(idBookRoom, idRoom))
                         {
                             //if (fAddCustomerInfo.ListIdCustomer != null)
                             //{

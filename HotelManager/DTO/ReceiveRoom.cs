@@ -17,7 +17,7 @@ namespace HotelManager.DTO
             Id = (int)row["id"];
             IdBookRoom = (int)row["idBookRoom"];
             IdRoom = (int)row["idroom"];
-            IdRoomName = (int)row["name"];
+            
         }
         public int Id { get => id; set => id = value; }
         public int IdBookRoom { get => idBookRoom; set => idBookRoom = value; }

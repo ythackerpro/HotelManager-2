@@ -9,7 +9,8 @@ namespace HotelManager
     public partial class fStaff : Form
     {
         #region Properties
-        public static readonly string HassPass = "e10adc3949ba59abbe56e057f20f883e"; // password default
+        //public static readonly string HassPass = "e10adc3949ba59abbe56e057f20f883e"; // password default
+        public static readonly string HassPass = "123456"; // password default
         #endregion
 
         #region Constructor
