@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [HotelManagement]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Database [HotelManagement]    Script Date: 5/12/2024 12:11:00 PM ******/
 CREATE DATABASE [HotelManagement]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [HotelManagement] SET QUERY_STORE = OFF
 GO
 USE [HotelManagement]
 GO
-/****** Object:  Table [dbo].[access]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[access]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -90,7 +90,7 @@ CREATE TABLE [dbo].[access](
 	[idjob] [int] NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[BILL]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[BILL]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -112,7 +112,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[BILLDETAILS]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[BILLDETAILS]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -129,7 +129,7 @@ CREATE TABLE [dbo].[BILLDETAILS](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[BOOKROOM]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[BOOKROOM]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -147,7 +147,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CUSTOMER]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[CUSTOMER]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -168,7 +168,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CUSTOMERTYPE]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[CUSTOMERTYPE]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -182,7 +182,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[job]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[job]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -197,7 +197,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PARAMETER]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[PARAMETER]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -208,7 +208,7 @@ CREATE TABLE [dbo].[PARAMETER](
 	[Describe] [nvarchar](200) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RECEIVEROOM]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[RECEIVEROOM]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -223,7 +223,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[RECEIVEROOMDETAILS]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[RECEIVEROOMDETAILS]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -238,7 +238,7 @@ CREATE TABLE [dbo].[RECEIVEROOMDETAILS](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[report]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[report]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -251,7 +251,7 @@ CREATE TABLE [dbo].[report](
 	[rate] [real] NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ROOM]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[ROOM]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -267,7 +267,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ROOMTYPE]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[ROOMTYPE]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -283,7 +283,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SERVICE]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[SERVICE]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -299,7 +299,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SERVICETYPE]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[SERVICETYPE]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -313,7 +313,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[STAFF]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[STAFF]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -335,7 +335,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[STAFFTYPE]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[STAFFTYPE]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -349,7 +349,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[STATUSBILL]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[STATUSBILL]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -363,7 +363,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[STATUSROOM]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Table [dbo].[STATUSROOM]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -400,6 +400,10 @@ GO
 INSERT [dbo].[BILL] ([ID], [IDReceiveRoom], [StaffSetUp], [DateOfCreate], [RoomPrice], [ServicePrice], [Surcharge], [TotalPrice], [Discount], [IDStatusBill]) VALUES (23, 9, N'admin', CAST(N'2024-05-11T00:50:00' AS SmallDateTime), 100000, 1000000, 0, 1100000, 0, 2)
 GO
 INSERT [dbo].[BILL] ([ID], [IDReceiveRoom], [StaffSetUp], [DateOfCreate], [RoomPrice], [ServicePrice], [Surcharge], [TotalPrice], [Discount], [IDStatusBill]) VALUES (24, 10, N'admin', CAST(N'2024-05-12T07:20:00' AS SmallDateTime), 100000, 400000, 0, 500000, 50, 2)
+GO
+INSERT [dbo].[BILL] ([ID], [IDReceiveRoom], [StaffSetUp], [DateOfCreate], [RoomPrice], [ServicePrice], [Surcharge], [TotalPrice], [Discount], [IDStatusBill]) VALUES (25, 11, N'admin', CAST(N'2024-05-12T11:00:00' AS SmallDateTime), 100000, 0, 0, 0, 0, 1)
+GO
+INSERT [dbo].[BILL] ([ID], [IDReceiveRoom], [StaffSetUp], [DateOfCreate], [RoomPrice], [ServicePrice], [Surcharge], [TotalPrice], [Discount], [IDStatusBill]) VALUES (26, 12, N'admin', CAST(N'2024-05-12T11:00:00' AS SmallDateTime), 100000, 0, 0, 0, 0, 1)
 GO
 SET IDENTITY_INSERT [dbo].[BILL] OFF
 GO
@@ -453,9 +457,21 @@ INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [Date
 GO
 INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (17, 9, 1, CAST(N'2024-05-11T00:44:00' AS SmallDateTime), CAST(N'2024-05-11' AS Date), CAST(N'2024-05-12' AS Date))
 GO
-INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (18, 8, 1, CAST(N'2024-05-12T07:07:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
-GO
 INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (19, 8, 1, CAST(N'2024-05-12T07:09:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (21, 11, 1, CAST(N'2024-05-12T10:43:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (22, 11, 1, CAST(N'2024-05-12T10:47:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (24, 11, 1, CAST(N'2024-05-12T11:12:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (25, 12, 1, CAST(N'2024-05-12T11:14:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (26, 12, 1, CAST(N'2024-05-12T11:14:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (27, 12, 1, CAST(N'2024-05-12T11:16:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
+GO
+INSERT [dbo].[BOOKROOM] ([ID], [IDCustomer], [IDRoomType], [DateBookRoom], [DateCheckIn], [DateCheckOut]) VALUES (29, 9, 1, CAST(N'2024-05-12T11:20:00' AS SmallDateTime), CAST(N'2024-05-12' AS Date), CAST(N'2024-05-13' AS Date))
 GO
 SET IDENTITY_INSERT [dbo].[BOOKROOM] OFF
 GO
@@ -463,11 +479,17 @@ SET IDENTITY_INSERT [dbo].[CUSTOMER] ON
 GO
 INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (6, N'206027758', 1, N'Nguyễn Văn Nam', CAST(N'1998-04-06' AS Date), N'Hà Nội', 978797135, N'Nam', N'Việt Nam')
 GO
-INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (7, N'1', 1, N'Nguyễn Phúc Tú', CAST(N'1997-01-19' AS Date), N'Ha Noi', 978797135, N'Nam', N'Viet Nam')
+INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (7, N'1', 1, N'Nguyễn Phúc Tú', CAST(N'1997-01-19' AS Date), N'Ha Noi', 978797135, N'Nam', N'Việt Nam')
 GO
-INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (8, N'113', 1, N'DLQ', CAST(N'2100-02-03' AS Date), N'VN', 111, N'Nam', N'Việt Nam')
+INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (8, N'113', 1, N'DLQ', CAST(N'2000-02-01' AS Date), N'VN', 111, N'Nam', N'Việt Nam')
 GO
 INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (9, N'222', 1, N'NA', CAST(N'1998-04-06' AS Date), N'Q8', 90, N'Nam', N'Việt Nam')
+GO
+INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (10, N'123', 1, N'DUY', CAST(N'1998-04-06' AS Date), N'TPHCM', 123, N'Nam', N'Việt Nam')
+GO
+INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (11, N'114', 1, N'1', CAST(N'1753-05-14' AS Date), N'!#!#!@#', 12313, N'Nam', N'Việt Nam')
+GO
+INSERT [dbo].[CUSTOMER] ([ID], [IDCard], [IDCustomerType], [Name], [DateOfBirth], [Address], [PhoneNumber], [Sex], [Nationality]) VALUES (12, N'111', 1, N'test-user1', CAST(N'1998-04-06' AS Date), N'TPHCM', 90, N'Nam', N'Việt Nam')
 GO
 SET IDENTITY_INSERT [dbo].[CUSTOMER] OFF
 GO
@@ -545,6 +567,12 @@ INSERT [dbo].[RECEIVEROOM] ([ID], [IDBookRoom], [IDRoom]) VALUES (9, 17, 6)
 GO
 INSERT [dbo].[RECEIVEROOM] ([ID], [IDBookRoom], [IDRoom]) VALUES (10, 19, 5)
 GO
+INSERT [dbo].[RECEIVEROOM] ([ID], [IDBookRoom], [IDRoom]) VALUES (11, 21, 6)
+GO
+INSERT [dbo].[RECEIVEROOM] ([ID], [IDBookRoom], [IDRoom]) VALUES (12, 22, 5)
+GO
+INSERT [dbo].[RECEIVEROOM] ([ID], [IDBookRoom], [IDRoom]) VALUES (13, 27, 2)
+GO
 SET IDENTITY_INSERT [dbo].[RECEIVEROOM] OFF
 GO
 INSERT [dbo].[report] ([idRoomType], [Month], [Year], [value], [rate]) VALUES (1, 11, 2018, NULL, NULL)
@@ -553,15 +581,19 @@ INSERT [dbo].[report] ([idRoomType], [Month], [Year], [value], [rate]) VALUES (1
 GO
 SET IDENTITY_INSERT [dbo].[ROOM] ON 
 GO
-INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (2, N'101', 1, 4)
+INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (2, N'101', 1, 2)
 GO
 INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (3, N'102', 1, 3)
 GO
 INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (4, N'104', 1, 2)
 GO
-INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (5, N'111', 1, 1)
+INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (5, N'111', 1, 2)
 GO
-INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (6, N'NA', 1, 1)
+INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (6, N'NA', 1, 2)
+GO
+INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (7, N'NA-2', 1, 1)
+GO
+INSERT [dbo].[ROOM] ([ID], [Name], [IDRoomType], [IDStatusRoom]) VALUES (8, N'test-1', 1, 1)
 GO
 SET IDENTITY_INSERT [dbo].[ROOM] OFF
 GO
@@ -589,7 +621,7 @@ INSERT [dbo].[SERVICETYPE] ([ID], [Name]) VALUES (2, N'quét dọn')
 GO
 SET IDENTITY_INSERT [dbo].[SERVICETYPE] OFF
 GO
-INSERT [dbo].[STAFF] ([UserName], [DisplayName], [PassWord], [IDStaffType], [IDCard], [DateOfBirth], [Sex], [Address], [PhoneNumber], [StartDay]) VALUES (N'admin', N'admin', N'admin', 1, N'1', CAST(N'2012-12-12' AS Date), N'1', N'Ha Noi', 123, CAST(N'2014-12-12' AS Date))
+INSERT [dbo].[STAFF] ([UserName], [DisplayName], [PassWord], [IDStaffType], [IDCard], [DateOfBirth], [Sex], [Address], [PhoneNumber], [StartDay]) VALUES (N'admin', N'admin_test', N'admin', 1, N'1', CAST(N'2012-12-12' AS Date), N'1', N'Ha Noi', 123, CAST(N'2014-12-12' AS Date))
 GO
 INSERT [dbo].[STAFF] ([UserName], [DisplayName], [PassWord], [IDStaffType], [IDCard], [DateOfBirth], [Sex], [Address], [PhoneNumber], [StartDay]) VALUES (N'NV1', N'NV-1', N'NV1', 2, N'2', CAST(N'1990-01-01' AS Date), N'Nam', N'TPHCM', 113, CAST(N'2018-05-16' AS Date))
 GO
@@ -625,7 +657,7 @@ SET IDENTITY_INSERT [dbo].[STATUSROOM] OFF
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [UQ__CUSTOMER__43A2A4E3B298720B]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Index [UQ__CUSTOMER__43A2A4E3B298720B]    Script Date: 5/12/2024 12:11:01 PM ******/
 ALTER TABLE [dbo].[CUSTOMER] ADD UNIQUE NONCLUSTERED 
 (
 	[IDCard] ASC
@@ -633,7 +665,7 @@ ALTER TABLE [dbo].[CUSTOMER] ADD UNIQUE NONCLUSTERED
 GO
 SET ANSI_PADDING ON
 GO
-/****** Object:  Index [UQ__STAFF__43A2A4E3F91CAEE5]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  Index [UQ__STAFF__43A2A4E3F91CAEE5]    Script Date: 5/12/2024 12:11:01 PM ******/
 ALTER TABLE [dbo].[STAFF] ADD UNIQUE NONCLUSTERED 
 (
 	[IDCard] ASC
@@ -743,7 +775,7 @@ GO
 ALTER TABLE [dbo].[STAFF]  WITH CHECK ADD FOREIGN KEY([IDStaffType])
 REFERENCES [dbo].[STAFFTYPE] ([ID])
 GO
-/****** Object:  StoredProcedure [dbo].[GetIDReceiveRoomCurrent]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[GetIDReceiveRoomCurrent]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -755,7 +787,7 @@ begin
 	from ReceiveRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[InsertReceiveRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[InsertReceiveRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -773,7 +805,7 @@ begin
 	where ID=@idRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[InsertReceiveRoomDetails]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[InsertReceiveRoomDetails]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -786,7 +818,7 @@ begin
 	values(@idReceiveRoom,@idCustomer)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[ShowBookRoomInfo]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[ShowBookRoomInfo]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -800,7 +832,7 @@ begin
 	where A.ID=@idBookRoom and A.IDCustomer=B.ID and A.IDRoomType=C.ID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ChekcAccess]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ChekcAccess]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -814,7 +846,7 @@ BEGIN
 	WHERE UserName = @username AND @formname LIKE NameForm
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_DeleteAccess]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_DeleteAccess]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -826,7 +858,7 @@ BEGIN
 	DELETE access WHERE @idJob = idjob AND @idStaffType = idStaffType
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_DeleteBookRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_DeleteBookRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -839,7 +871,7 @@ begin
 	where ID=@id
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_DeleteReceiveRoomDetails]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_DeleteReceiveRoomDetails]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -852,7 +884,7 @@ begin
 	where IDCustomerOther=@idCustomer and IDReceiveRoom=@idReceiveRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_DeleteStaffType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_DeleteStaffType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -870,7 +902,7 @@ begin
 	end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetCustomerTypeNameByIdCard]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetCustomerTypeNameByIdCard]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -884,7 +916,7 @@ begin
 	where A.IDCustomerType=B.ID and A.IDCard=@idCard
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetIdBillFromIdRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetIdBillFromIdRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -898,7 +930,7 @@ begin
 	where A.ID=B.IDReceiveRoom and B.IDStatusBill=1 and A.IDRoom=@idRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetIdBillMax]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetIdBillMax]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -910,7 +942,7 @@ as
 select MAX(id)
 from Bill
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetIDCustomerFromBookRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetIDCustomerFromBookRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -924,7 +956,7 @@ begin
 	where A.ID=@idReceiveRoom and A.IDBookRoom=B.ID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetIdReceiRoomFromIdRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetIdReceiRoomFromIdRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -939,7 +971,7 @@ where IDRoom=@idRoom
 order by ID desc
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetIDRoomFromReceiveRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetIDRoomFromReceiveRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -953,7 +985,7 @@ begin
 	where ID=@idReceiveRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetNameStaffTypeByUserName]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetNameStaffTypeByUserName]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -967,7 +999,7 @@ begin
 	where a.IDStaffType=B.ID and A.UserName=@username
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetPeoples]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetPeoples]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -982,7 +1014,7 @@ begin
 	where A.ID=C.IDReceiveRoom and A.ID=B.IDReceiveRoom and C.ID=@idBill
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetRoomTypeByIdBookRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetRoomTypeByIdBookRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -996,7 +1028,7 @@ begin
 	where A.ID=@idBookRoom and A.IDRoomType=B.ID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetRoomTypeByIdRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetRoomTypeByIdRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1010,7 +1042,7 @@ begin
 	where A.IDRoomType=B.ID and A.ID=@idRoom
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_GetStaffSetUp]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_GetStaffSetUp]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1024,7 +1056,7 @@ begin
 	where A.ID=@idBill and A.StaffSetUp=B.UserName
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertAccess]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertAccess]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1036,7 +1068,7 @@ BEGIN
 	INSERT INTO access(idjob, idstafftype) VALUES(@idJob, @idStaffType)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertBill]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertBill]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1049,7 +1081,7 @@ begin
 	values(@idReceiveRoom,@staffSetUp)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertBillDetails]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertBillDetails]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1068,7 +1100,7 @@ begin
 end
 
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertBookRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertBookRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1084,7 +1116,7 @@ begin
 	values(@idCustomer,@idRoomType,@datecheckin,@datecheckout,@datebookroom)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertCustomer]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertCustomer]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1102,7 +1134,7 @@ INSERT INTO dbo.Customer(IDCard,IDCustomerType, Name, DateOfBirth, Address, Phon
 	VALUES(@idCard, @idCustomerType, @customerName, @dateOfBirth, @address, @phoneNumber, @sex, @nationality)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertCustomer_]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertCustomer_]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1115,7 +1147,7 @@ begin
 	values(@idCard,@name,@idCustomerType,@dateOfBirth,@address,@phoneNumber,@sex,@nationality)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertReport]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertReport]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1144,7 +1176,7 @@ BEGIN
     UPDATE dbo.REPORT SET value = value + @price WHERE Year = @year AND Month = @month AND idRoomType = @id
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1155,7 +1187,7 @@ AS
 INSERT INTO dbo.Room(Name, IDRoomType, IDStatusRoom)
 VALUES(@nameRoom, @idRoomType, @idStatusRoom)
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertService]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertService]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1168,7 +1200,7 @@ BEGIN
 	VALUES(@name, @idServiceType, @price)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertServiceType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertServiceType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1181,7 +1213,7 @@ BEGIN
 	VALUES(@name)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertStaff]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertStaff]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1199,7 +1231,7 @@ BEGIN
 	VALUES (@user, @name, @pass, @idStaffType,@idCard, @dateOfBirth, @sex, @address, @phoneNumber, @startDay)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_InsertStaffType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_InsertStaffType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1211,7 +1243,7 @@ BEGIN
     INSERT INTO staffType(Name) VALUES(@name)
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_IsExistBillDetailsOfRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_IsExistBillDetailsOfRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1225,7 +1257,7 @@ begin
 	where A.IDStatusBill=1 and A.ID=B.IDBill and C.ID=A.IDReceiveRoom and C.IDRoom=@idRoom and B.IDService=@idservice
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_IsExistBillOfRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_IsExistBillOfRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1241,7 +1273,7 @@ begin
 	where A.IDStatusBill=1 and A.IDReceiveRoom=B.ID and B.IDRoom=@idRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_IsIDBookRoomExists]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_IsIDBookRoomExists]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1259,7 +1291,7 @@ begin
 	)
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_IsIdCardExists]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_IsIdCardExists]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1275,7 +1307,7 @@ from Customer
 where IDCard=@idCard
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_IsIdCardExistsAcc]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_IsIdCardExistsAcc]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1289,7 +1321,7 @@ begin
 	where IDCard=@idCard
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadBookRoomsByDate]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadBookRoomsByDate]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1304,7 +1336,7 @@ begin
 	order by A.DateBookRoom desc
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadEmptyRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadEmptyRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1323,7 +1355,7 @@ begin
 	where IDStatusRoom=1 and IDRoomType=@idRoomType
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullAccessNow]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullAccessNow]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1336,7 +1368,7 @@ BEGIN
 	WHERE @idStaffType = dbo.Access.IDStaffType
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFUllBill]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFUllBill]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1353,7 +1385,7 @@ BEGIN
 	ORDER BY DateOfCreate DESC
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullCustomer]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullCustomer]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1363,7 +1395,7 @@ AS
 SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, DateOfBirth, PhoneNumber, Address, Nationality, IDCustomerType 
 FROM dbo.Customer INNER JOIN dbo.CustomerType ON CustomerType.ID = Customer.IDCustomerType
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullCustomerType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullCustomerType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1376,7 +1408,7 @@ CREATE PROC [dbo].[USP_LoadFullCustomerType]
 AS
 SELECT * FROM dbo.CustomerType
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullParameter]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullParameter]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1385,7 +1417,7 @@ CREATE PROC [dbo].[USP_LoadFullParameter]
 AS
 SELECT * FROM dbo.PARAMETER
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullReport]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullReport]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1399,7 +1431,7 @@ BEGIN
 END
 -- them parra--------------------------------------------------------------------------------------------------------------
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1412,7 +1444,7 @@ FROM dbo.Room INNER JOIN dbo.RoomType
 ON roomtype.id = room.IDRoomType
 INNER JOIN dbo.StatusRoom ON statusroom.id = room.IDStatusRoom
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullRoomType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullRoomType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1421,7 +1453,7 @@ CREATE PROC [dbo].[USP_LoadFullRoomType]
 AS
 SELECT * FROM dbo.RoomType
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullService]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullService]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1431,7 +1463,7 @@ AS
 SELECT Service.ID, Service.Name, Price, ServiceType.Name AS [nameServiceType], IDServiceType
 FROM dbo.Service INNER JOIN dbo.ServiceType ON ServiceType.ID = Service.IDServiceType
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullServiceType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullServiceType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1440,7 +1472,7 @@ CREATE PROC [dbo].[USP_LoadFullServiceType]
 AS
 SELECT * FROM ServiceType
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullStaff]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullStaff]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1453,7 +1485,7 @@ BEGIN
     FROM dbo.Staff INNER JOIN dbo.StaffType ON StaffType.ID = Staff.IDStaffType
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullStaffType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullStaffType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1469,7 +1501,7 @@ begin
 SELECT * FROM dbo.StaffType
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadFullStatusRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadFullStatusRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1482,7 +1514,7 @@ CREATE PROC [dbo].[USP_LoadFullStatusRoom]
 AS
 SELECT * FROM dbo.StatusRoom
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadListFullRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadListFullRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1497,7 +1529,7 @@ begin
 	order by A.ID asc
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadReceiveRoomsByDate]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadReceiveRoomsByDate]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1512,7 +1544,7 @@ begin
 	order by A.ID desc
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadServiceByServiceType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadServiceByServiceType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1528,7 +1560,7 @@ begin
 	where IDServiceType=@idServiceType
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_LoadStaffInforByUserName]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_LoadStaffInforByUserName]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1542,7 +1574,7 @@ begin
 	where UserName=@username
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_Login]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_Login]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1553,7 +1585,7 @@ create proc [dbo].[USP_Login]
 as
 Select * from Staff where UserName=@userName and PassWord=@passWord
 GO
-/****** Object:  StoredProcedure [dbo].[USP_RoomTypeInfo]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_RoomTypeInfo]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1567,7 +1599,7 @@ from RoomType
 where ID=@id
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchBill]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchBill]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1603,7 +1635,7 @@ BEGIN
 	ORDER BY DateOfCreate DESC
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchCustomer]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchCustomer]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1633,7 +1665,7 @@ BEGIN
 	FROM Customer INNER JOIN @table ON [@table].id = CUSTOMER.ID INNER JOIN dbo.CustomerType ON CustomerType.ID = Customer.IDCustomerType
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchParameter]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchParameter]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1650,7 +1682,7 @@ BEGIN
 	WHERE [dbo].[convertstring](name) like @string
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1670,7 +1702,7 @@ BEGIN
 	WHERE dbo.ConvertString(dbo.Room.name) LIKE @string OR dbo.Room.id = @int
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchRoomType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchRoomType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1688,7 +1720,7 @@ BEGIN
 	WHERE [dbo].[convertstring](name) LIKE @string OR id = @int
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchService]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchService]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1708,7 +1740,7 @@ BEGIN
 		FROM @table INNER JOIN dbo.SERVICE ON SERVICE.ID = [@table].id INNER JOIN dbo.ServiceType ON ServiceType.ID = Service.IDServiceType
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchServiceType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchServiceType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1729,7 +1761,7 @@ BEGIN
 	SELECT dbo.SERVICETYPE.ID, Name FROM @table INNER JOIN servicetype ON  SERVICETYPE.ID = [@table].id
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_SearchStaff]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_SearchStaff]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1760,7 +1792,7 @@ BEGIN
     FROM dbo.Staff INNER JOIN  @table ON [@table].username = STAFF.UserName INNER JOIN dbo.StaffType ON StaffType.ID = Staff.IDStaffType
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowBill]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowBill]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1774,7 +1806,7 @@ begin
 	where A.IDStatusBill=1 and A.ID=b.IDBill and A.IDReceiveRoom=C.ID and C.IDRoom=@idRoom and B.IDService=D.ID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowBillInfo]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowBillInfo]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1788,7 +1820,7 @@ from Bill A, ReceiveRoom B,BookRoom C, Customer D,CustomerType E,Room F,RoomType
 where A.IDReceiveRoom=B.ID and B.IDBookRoom=C.ID and C.IDCustomer=D.ID and D.IDCustomerType=E.ID and B.IDRoom=F.ID and F.IDRoomType=G.ID and A.ID=@idBill
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowBillPreView]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowBillPreView]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1803,7 +1835,7 @@ begin
 	where A.IDStatusBill=2 and A.ID=b.IDBill and A.ID=@idBill and B.IDService=D.ID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowBillRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowBillRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1820,7 +1852,7 @@ begin
 end
 
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowCustomerFromReceiveRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowCustomerFromReceiveRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1838,7 +1870,7 @@ begin
 	where A.ID=@idReceiveRoom and A.ID=B.IDReceiveRoom and B.IDCustomerOther=C.ID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_ShowReceiveRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_ShowReceiveRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1852,7 +1884,7 @@ begin
 	where A.IDBookRoom=B.ID and A.IDRoom=C.ID and A.ID=@idReceiveRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_Other]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_Other]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1879,7 +1911,7 @@ begin
 	where ID=@idRoom
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_RoomPrice]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_RoomPrice]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1924,7 +1956,7 @@ begin
 	where id=@idBill
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_ServicePrice]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateBill_ServicePrice]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1944,7 +1976,7 @@ begin
 	where ID=@idBill
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateBillDetails]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateBillDetails]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1980,7 +2012,7 @@ begin
 	end
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateBookRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateBookRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1995,7 +2027,7 @@ begin
 	where ID=@id
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateCustomer]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateCustomer]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2032,7 +2064,7 @@ BEGIN
 	end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateCustomer_]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateCustomer_]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2046,7 +2078,7 @@ begin
 	where ID=@id
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateDisplayName]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateDisplayName]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2060,7 +2092,7 @@ begin
 	where UserName=@username
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateInfo]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateInfo]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2074,7 +2106,7 @@ begin
 	where UserName=@username
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdatePassword]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdatePassword]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2088,7 +2120,7 @@ begin
 	where UserName=@username
 end
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateReceiveRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateReceiveRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2107,7 +2139,7 @@ begin
 end	
 
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2120,7 +2152,7 @@ SET
 	Name = @nameRoom, IDRoomType = @idRoomType, IDStatusRoom = @idStatusRoom
 WHERE ID = @id
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateRoomType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateRoomType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2133,7 +2165,7 @@ AS
     name = @name, Price = @price, LimitPerson = @limitPerson
 	WHERE id =@id
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateService]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateService]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2150,7 +2182,7 @@ begin
 	where id = @id
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateServiceType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateServiceType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2165,7 +2197,7 @@ BEGIN
 	WHERE id =@id
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateStaff]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateStaff]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2188,7 +2220,7 @@ BEGIN
 	WHERE UserName = @user
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateStaffType]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateStaffType]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -2203,7 +2235,7 @@ BEGIN
 	WHERE ID = @id
 END
 GO
-/****** Object:  StoredProcedure [dbo].[USP_UpdateStatusRoom]    Script Date: 5/12/2024 7:47:24 AM ******/
+/****** Object:  StoredProcedure [dbo].[USP_UpdateStatusRoom]    Script Date: 5/12/2024 12:11:01 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
