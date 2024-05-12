@@ -218,10 +218,11 @@ namespace HotelManager
 
         private void btnIntroduce_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            fAbout fAbout = new fAbout();
-            fAbout.ShowDialog();
-            this.Show();
+            MessageBox.Show("Để sau!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //this.Hide();
+            //fAbout fAbout = new fAbout();
+            //fAbout.ShowDialog();
+            //this.Show();
         }
 
         private void title_Click(object sender, EventArgs e)
